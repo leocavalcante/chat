@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "bun --bun run server.ts"
+    "start": "bun --bun run server.ts",
+    "test": "bun test src/lib src/types src/components server.test.ts",
+    "test:app": "bun test src/App.test.tsx",
+    "test:all": "bun run test && bun run test:app"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
@@ -14,7 +17,10 @@
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.1",
     "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0"
+    "@types/react-dom": "^19.0.0",
+    "happy-dom": "^20.0.11"
   }
 }
