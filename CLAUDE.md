@@ -7,6 +7,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ```bash
 bun install          # Install dependencies
 bun run start        # Build and run dev server on http://localhost:3000
+bun run test         # Run unit and component tests
+bun run test:app     # Run App integration tests
+bun run test:all     # Run all tests
 ```
 
 The start command runs `server.ts` which:

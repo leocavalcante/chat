@@ -1,5 +1,7 @@
 # Chat
 
+[![CI](https://github.com/leocavalcante/chat/actions/workflows/ci.yml/badge.svg)](https://github.com/leocavalcante/chat/actions/workflows/ci.yml)
+
 A minimal, elegant chat client for Claude built with React 19 and Bun.
 
 ## Features
